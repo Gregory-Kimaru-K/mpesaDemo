@@ -1,7 +1,0 @@
-import requests
-from request.auth import HTTPBasicAuth
-import json
-request = ''
-
-def getAccessToken(request):
-
