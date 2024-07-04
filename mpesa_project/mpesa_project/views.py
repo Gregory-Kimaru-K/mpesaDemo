@@ -1,1 +1,2 @@
-from django.shortcut import render
+from django.shortcuts import render
+from .generateAccessToken import get_access_token
