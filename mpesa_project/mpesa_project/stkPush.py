@@ -21,7 +21,7 @@ def initiate_stk_push(request):
             callback_url = 'https://dad5-102-219-210-106.ngrok-free.app/stk/'
             timestamp = datetime.now().strftime('%Y%m%d%H%M%S')
             password = base64.b64encode((business_short_code + passkey + timestamp).encode()).decode()
-            party_a = '254708374149'  # Ensure it's a string starting with '254'
+            party_a = phone  # Ensure it's a string starting with '254'
             party_b = business_short_code  # Should be integer
             account_reference = 'KIBARU HOLDING ACCOUNT'
             transaction_desc = 'Holds Funds'
