@@ -23,7 +23,7 @@ def initiate_stk_push(request):
             password = base64.b64encode((business_short_code + passkey + timestamp).encode()).decode()
             party_a = '254708374149'  # Ensure it's a string starting with '254'
             party_b = business_short_code  # Should be integer
-            account_reference = 'KIBARU'
+            account_reference = 'KIBARU HOLDING ACCOUNT'
             transaction_desc = 'Holds Funds'
             stk_push_headers = {
                 'Content-Type': 'application/json',
