@@ -20,5 +20,6 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.get_access_token, name='get_access_tokens')
+    path('', views.get_access_token_view, name='get_access_tokens'),
+    path('stk/', views.initiata_stk_push_view, name='intiate_stkk')
 ]

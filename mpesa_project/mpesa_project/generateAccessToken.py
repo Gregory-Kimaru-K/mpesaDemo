@@ -11,7 +11,7 @@ def get_access_token(request):
 
     try:
         response = requests.get(api_url, headers=headers, auth=auth)
-        response.raise_for_status()
+        print(response.raise_for_status())
         result = response.json()
         access_token = result['access_token']
         return JsonResponse({'access_token':access_token})
